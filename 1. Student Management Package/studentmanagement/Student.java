@@ -21,6 +21,7 @@ public class Student
         this.grade1=grade1;
         this.grade2=grade2;
         this.grade3=grade3;
+        this.av=average(grade1,grade2,grade3);
     }
     public double average(char grade1,char grade2,char grade3)
     {
