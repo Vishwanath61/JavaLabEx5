@@ -40,16 +40,18 @@ public class studentmanager
     
     public int removestudent(int n,Student s[])
     {        
+        int indexremove=-1;
         System.out.println("\nDeleting Student from list:");
         System.out.print("Enter the name of Student to delete: ");
         String s1=obj.next();
         for(int i=0;i<n;i++)
         {
             if(s[i].name.equals(s1))
+            for(int j=i;j<n-1;j++)
             {
-                s[i]=s[i+1];
-            }
-        }
+                s[j]=s[j+1];   
+            }                              
+        }        
         System.out.println("The Student record has been successfully deleted!!");
         n=n-1;
         return n;
@@ -97,4 +99,5 @@ public class studentmanager
         System.out.println("The Average grade of "+n+" students is:"+avgrade);
     }
 }
+
 
