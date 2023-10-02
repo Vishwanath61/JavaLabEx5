@@ -39,8 +39,7 @@ public class studentmanager
     }    
     
     public int removestudent(int n,Student s[])
-    {        
-        int indexremove=-1;
+    {       
         System.out.println("\nDeleting Student from list:");
         System.out.print("Enter the name of Student to delete: ");
         String s1=obj.next();
